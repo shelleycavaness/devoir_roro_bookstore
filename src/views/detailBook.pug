@@ -1,0 +1,6 @@
+extends layout
+block content
+    div
+        book.title
+        -var img= book.image
+        img(src="/uploads/" + image)

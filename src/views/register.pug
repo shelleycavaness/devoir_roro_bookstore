@@ -1,0 +1,16 @@
+extends layout
+block content
+    h2 please register here
+    p your information here
+    form(method="post", action="/admin/register" )
+        .form-group
+            input.form-control(name="username", type="text", placeholder="enter username")
+        .form-group
+            input.form-control(name="name", type="text", placeholder="name")
+        .form-group
+            input.form-control(name="email", type="email", placeholder="email")    
+        .form-group
+            input.form-control(name="password", type="password", placeholder="passwor")
+        .form-group
+            input.form-control(name="password2", type="password", placeholder=" password")    
+        input.btn.btn-primary(type='submit', name='submit', value='enter')

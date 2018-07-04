@@ -1,0 +1,11 @@
+extends layout
+block content
+    each book in books
+        div
+            -const img =book.image
+            img(src="uploads/"+img)
+            p=book.author
+            h1=book.title
+            p we are compiling from the root where default from public so no slash befor the folder. src="uploads/"
+            a(href="/detailBook")
+                button see more
